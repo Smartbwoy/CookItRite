@@ -1,0 +1,84 @@
+@charset "utf-8";
+#ingrmeasure {
+	border: 1px solid #A2C9A8;
+	background-color: #C6E4C3;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 14px;
+	color: #323231;
+	-webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+	-moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+	box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+	padding-top: 7px;
+	padding-right: 7px;
+	padding-bottom: 7px;
+	padding-left: 7px;
+	text-align: center;
+	margin-right: 10px;
+}
+
+#ingrmeasure:focus{
+	background: #fff;
+	color: #000000;
+	font-weight: bold;
+	}
+#m_type {
+	border: 1px solid #A2C9A8;
+	background-color: #C6E4C3;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 14px;
+	color: #323231;
+	-webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+	-moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+	box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+	padding-top: 7px;
+	padding-right: 7px;
+	padding-bottom: 7px;
+	padding-left: 7px;
+	text-align: center;
+	margin-right: 10px;
+}
+
+#m_type:focus{
+	background: #fff;
+	color: #000000;
+	font-weight: bold;
+	}
+.inputdata {
+	border: 1px solid #A2C9A8;
+	background-color: #C6E4C3;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 14px;
+	color: #323231;
+	-webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+	-moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+	box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+	padding-top: 7px;
+	padding-right: 7px;
+	padding-bottom: 7px;
+	padding-left: 7px;
+	text-align: center;
+}
+
+.inputdata:focus{
+	background: #fff;
+	color: #000000;
+	font-weight: bold;
+	}
+.messageinfo {
+	color: #CE00B3;
+	text-shadow: -2px -1px 1px #FFFFFF;
+	font-weight: bolder;
+	opacity: 1;
+}
+.addingredentbtn {
+	color: #CE00B3;
+	text-shadow: -2px -1px 1px #FFFFFF;
+	font-weight: bolder;
+	opacity: 1;
+}
+.bodyhtml   {
+	background-image: none;
+}
