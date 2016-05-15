@@ -22,7 +22,6 @@ var app = {
 	
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-		"use strict";
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
@@ -343,7 +342,6 @@ function emailHint(string){
     return pattern.test(string);	
 }
 function namehint(string){
-	"use strict";
 	if(string.length===0 || string === null){
 		return false;
 	}
@@ -470,7 +468,6 @@ function uploadImg(){
 
 
 $(document).ready(function() {
-	"use strict";
     var $auth = $('.auth');
 	
     var $signup = $('.signup');
