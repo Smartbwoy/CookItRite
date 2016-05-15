@@ -1063,7 +1063,9 @@ input[type="number"]  {
 }
 
 .amount   {
-	width: 43px;
+	width: 73px;
+	height: 15px;
+	margin-top: 4px;
 }
 .note {
 	color: #FFFFFF;
