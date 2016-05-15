@@ -1,0 +1,1074 @@
+@charset "utf-8";
+@font-face { font-family: Suburbana; src:url(../font/Suburbana.ttf)}
+
+
+
+
+/* CSS Document */
+@media screen and (max-width: 320px) /* Mobile */{
+.main {
+	background-image: url(../img/bg2.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.meal_name{
+	border: 1px solid #A2C9A8;
+	background-color: #C6E4C3;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 14px;
+	color: #323231;
+	-webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+	-moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+	box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0;
+	padding-top: 7px;
+	padding-right: 7px;
+	padding-bottom: 7px;
+	padding-left: 7px;
+	text-align: center;
+   }
+.meal_name:focus {
+	background: #fff;
+	color: #000000;
+	font-weight: bold;
+   }
+#meal-name {
+	margin: 0 auto;
+	width: 50%;
+}
+
+.pic-video {
+	margin: 0 auto;
+	width: 50%;
+}
+	.js .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    max-width: 80%;
+    font-size: 1.25rem;
+    /* 20px */
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+}
+
+.no-js .inputfile + label {
+    display: none;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label * {
+    /* pointer-events: none; */
+    /* in case of FastClick lib use */
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    /* 4px */
+    margin-right: 0.25em;
+    /* 4px */
+}
+
+/* style 4 */
+
+.inputfile-4 + label {
+    color: #d3394c;
+}
+
+.inputfile-4:focus + label,
+.inputfile-4.has-focus + label,
+.inputfile-4 + label:hover {
+    color: #722040;
+}
+
+.inputfile-4 + label figure {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #d3394c;
+	display: block;
+	padding: 20px;
+	margin: 0 auto 10px;
+}
+
+.inputfile-4:focus + label figure,
+.inputfile-4.has-focus + label figure,
+.inputfile-4 + label:hover figure {
+    background-color: #722040;
+}
+
+.inputfile-4 + label svg {
+    width: 100%;
+    height: 100%;
+    fill: #f1e5e6;
+}
+#file-5 {
+	display: none;
+}
+form .pic-video label {
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+}
+.pic-video label figure {
+	background: -moz-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#14330A), color-stop(26%,#6DAA5C), color-stop(72%,#348214), color-stop(100%,#146882)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%);
+	opacity: 0.96;
+}
+.pic-video label span {
+	color: #FFFFFF;
+	text-shadow: 0px 3px 0px #098A00;
+	white-space: pre-wrap;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-style: normal;
+	font-size: small;
+	text-align: center;
+	font-weight: bold;
+}
+label figure svg {
+
+}
+.meal_info {
+	background: -moz-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#14330A), color-stop(26%,#6DAA5C), color-stop(72%,#348214), color-stop(100%,#146882)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%); /* IE10+ */
+	opacity: 0.86;
+	}
+	
+.inputfile + label figure {
+    width: 50px;
+    height: 50px;
+}
+.header-1   {
+	text-align: center;
+	margin-top: -18px;
+	color: #FFFFFF;
+	font-family: Suburbana;
+	font-weight: 400;
+	font-style: normal;
+	text-shadow: 3px -1px 0px #000000;
+	font-size: medium;
+}
+		}
+@media screen and (max-width: 480px) /* Mobile */{
+.main {
+	background-image: url(../img/bg2.jpg);
+	background-size: cover;
+	width: 100%;
+}
+
+.meal_name{
+	border: 1px solid #A2C9A8;
+	background-color: #C6E4C3;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 14px;
+	color: #323231;
+	-webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+	-moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+	box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0;
+	padding-top: 7px;
+	padding-right: 7px;
+	padding-bottom: 7px;
+	padding-left: 7px;
+	text-align: center;
+   }
+.meal_name:focus {
+	background: #fff;
+	color: #000000;
+	font-weight: bold;
+   }
+#meal-name {
+	margin: 0 auto;
+	width: 50%;
+}
+
+.pic-video {
+	margin: 0 auto;
+	width: 50%;
+}
+	.js .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    max-width: 80%;
+    font-size: 1.25rem;
+    /* 20px */
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+}
+
+.no-js .inputfile + label {
+    display: none;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label * {
+    /* pointer-events: none; */
+    /* in case of FastClick lib use */
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    /* 4px */
+    margin-right: 0.25em;
+    /* 4px */
+}
+
+/* style 4 */
+
+.inputfile-4 + label {
+    color: #d3394c;
+}
+
+.inputfile-4:focus + label,
+.inputfile-4.has-focus + label,
+.inputfile-4 + label:hover {
+    color: #722040;
+}
+
+.inputfile-4 + label figure {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #d3394c;
+	display: block;
+	padding: 20px;
+	margin: 0 auto 10px;
+}
+
+.inputfile-4:focus + label figure,
+.inputfile-4.has-focus + label figure,
+.inputfile-4 + label:hover figure {
+    background-color: #722040;
+}
+
+.inputfile-4 + label svg {
+    width: 100%;
+    height: 100%;
+    fill: #f1e5e6;
+}
+#file-5 {
+	display: none;
+}
+form .pic-video label {
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+}
+.pic-video label figure {
+	background: -moz-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#14330A), color-stop(26%,#6DAA5C), color-stop(72%,#348214), color-stop(100%,#146882)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%);
+	opacity: 0.96;
+}
+.pic-video label span {
+	color: #FFFFFF;
+	text-shadow: 0px 3px 0px #098A00;
+	white-space: pre-wrap;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-style: normal;
+	font-size: small;
+	text-align: center;
+	font-weight: bold;
+}
+label figure svg {
+
+}
+.meal_info {
+	background: -moz-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#14330A), color-stop(26%,#6DAA5C), color-stop(72%,#348214), color-stop(100%,#146882)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%); /* IE10+ */
+	opacity: 0.86;
+	}
+	
+.inputfile + label figure {
+    width: 50px;
+    height: 50px;
+}
+.header-1   {
+	text-align: center;
+	margin-top: -18px;
+	color: #FFFFFF;
+	font-family: Suburbana;
+	font-weight: 400;
+	font-style: normal;
+	text-shadow: 3px -1px 0px #000000;
+	font-size: medium;
+}
+		}
+@media screen and (max-width: 767px) /* Mobile */{
+.main {
+	background-image: url(../img/bg2.jpg);
+	background-size: cover;
+	width: 100%;
+}
+
+.meal_name{
+	border: 1px solid #A2C9A8;
+	background-color: #C6E4C3;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 14px;
+	color: #323231;
+	-webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+	-moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+	box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0;
+	padding-top: 7px;
+	padding-right: 7px;
+	padding-bottom: 7px;
+	padding-left: 7px;
+	text-align: center;
+   }
+.meal_name:focus {
+	background: #fff;
+	color: #000000;
+	font-weight: bold;
+   }
+#meal-name {
+	margin: 0 auto;
+	width: 50%;
+}
+
+.pic-video {
+	margin: 0 auto;
+	width: 50%;
+}
+	.js .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    max-width: 80%;
+    font-size: 1.25rem;
+    /* 20px */
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+}
+
+.no-js .inputfile + label {
+    display: none;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label * {
+    /* pointer-events: none; */
+    /* in case of FastClick lib use */
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    /* 4px */
+    margin-right: 0.25em;
+    /* 4px */
+}
+
+/* style 4 */
+
+.inputfile-4 + label {
+    color: #d3394c;
+}
+
+.inputfile-4:focus + label,
+.inputfile-4.has-focus + label,
+.inputfile-4 + label:hover {
+    color: #722040;
+}
+
+.inputfile-4 + label figure {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #d3394c;
+	display: block;
+	padding: 20px;
+	margin: 0 auto 10px;
+}
+
+.inputfile-4:focus + label figure,
+.inputfile-4.has-focus + label figure,
+.inputfile-4 + label:hover figure {
+    background-color: #722040;
+}
+
+.inputfile-4 + label svg {
+    width: 100%;
+    height: 100%;
+    fill: #f1e5e6;
+}
+#file-5 {
+	display: none;
+}
+form .pic-video label {
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+}
+.pic-video label figure {
+	background: -moz-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#14330A), color-stop(26%,#6DAA5C), color-stop(72%,#348214), color-stop(100%,#146882)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%);
+	opacity: 0.96;
+}
+.pic-video label span {
+	color: #FFFFFF;
+	text-shadow: 0px 3px 0px #098A00;
+	white-space: pre-wrap;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-style: normal;
+	font-size: small;
+	text-align: center;
+	font-weight: bold;
+}
+label figure svg {
+
+}
+.meal_info {
+	background: -moz-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#14330A), color-stop(26%,#6DAA5C), color-stop(72%,#348214), color-stop(100%,#146882)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%); /* IE10+ */
+	opacity: 0.86;
+	}
+	
+.inputfile + label figure {
+    width: 50px;
+    height: 50px;
+}
+.header-1   {
+	text-align: center;
+	margin-top: -18px;
+	color: #FFFFFF;
+	font-family: Suburbana;
+	font-weight: 400;
+	font-style: normal;
+	text-shadow: 3px -1px 0px #000000;
+	font-size: medium;
+}
+		}
+@media (min-width: 768px) and (max-width: 979px) {
+.main {
+	background-image: url(../img/bg2.jpg);
+	background-size: cover;
+	width: 100%;
+}
+
+.meal_name{
+	border: 1px solid #A2C9A8;
+	background-color: #C6E4C3;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 14px;
+	color: #323231;
+	-webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+	-moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+	box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0;
+	padding-top: 7px;
+	padding-right: 7px;
+	padding-bottom: 7px;
+	padding-left: 7px;
+	text-align: center;
+   }
+.meal_name:focus {
+	background: #fff;
+	color: #000000;
+	font-weight: bold;
+   }
+#meal-name {
+	margin: 0 auto;
+	width: 50%;
+}
+
+.pic-video {
+	margin: 0 auto;
+	width: 50%;
+}
+	.js .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    max-width: 80%;
+    font-size: 1.25rem;
+    /* 20px */
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+}
+
+.no-js .inputfile + label {
+    display: none;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label * {
+    /* pointer-events: none; */
+    /* in case of FastClick lib use */
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    /* 4px */
+    margin-right: 0.25em;
+    /* 4px */
+}
+
+/* style 4 */
+
+.inputfile-4 + label {
+    color: #d3394c;
+}
+
+.inputfile-4:focus + label,
+.inputfile-4.has-focus + label,
+.inputfile-4 + label:hover {
+    color: #722040;
+}
+
+.inputfile-4 + label figure {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #d3394c;
+	display: block;
+	padding: 20px;
+	margin: 0 auto 10px;
+}
+
+.inputfile-4:focus + label figure,
+.inputfile-4.has-focus + label figure,
+.inputfile-4 + label:hover figure {
+    background-color: #722040;
+}
+
+.inputfile-4 + label svg {
+    width: 100%;
+    height: 100%;
+    fill: #f1e5e6;
+}
+#file-5 {
+	display: none;
+}
+form .pic-video label {
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+}
+.pic-video label figure {
+	background: -moz-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#14330A), color-stop(26%,#6DAA5C), color-stop(72%,#348214), color-stop(100%,#146882)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%);
+	opacity: 0.96;
+}
+.pic-video label span {
+	color: #FFFFFF;
+	text-shadow: 0px 3px 0px #098A00;
+	white-space: pre-wrap;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-style: normal;
+	font-size: small;
+	text-align: center;
+	font-weight: bold;
+}
+label figure svg {
+
+}
+.meal_info {
+	background: -moz-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#14330A), color-stop(26%,#6DAA5C), color-stop(72%,#348214), color-stop(100%,#146882)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%); /* IE10+ */
+	opacity: 0.86;
+	}
+	
+.inputfile + label figure {
+    width: 50px;
+    height: 50px;
+}
+.header-1   {
+	text-align: center;
+	margin-top: -18px;
+	color: #FFFFFF;
+	font-family: Suburbana;
+	font-weight: 400;
+	font-style: normal;
+	text-shadow: 3px -1px 0px #000000;
+	font-size: medium;
+}
+		}
+@media (min-width: 980px) and (max-width: 3000px) {
+.main {
+	background-image: url(../img/bg2.jpg);
+	background-size: cover;
+	width: 100%;
+}
+
+.meal_name{
+	border: 1px solid #A2C9A8;
+	background-color: #C6E4C3;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 14px;
+	color: #323231;
+	-webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+	-moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+	box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0;
+	padding-top: 7px;
+	padding-right: 7px;
+	padding-bottom: 7px;
+	padding-left: 7px;
+	text-align: center;
+   }
+.meal_name:focus {
+	background: #fff;
+	color: #000000;
+	font-weight: bold;
+   }
+#meal-name {
+	margin: 0 auto;
+	width: 50%;
+}
+
+.pic-video {
+	margin: 0 auto;
+	width: 50%;
+}
+	.js .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    max-width: 80%;
+    font-size: 1.25rem;
+    /* 20px */
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+}
+
+.no-js .inputfile + label {
+    display: none;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label * {
+    /* pointer-events: none; */
+    /* in case of FastClick lib use */
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    /* 4px */
+    margin-right: 0.25em;
+    /* 4px */
+}
+
+/* style 4 */
+
+.inputfile-4 + label {
+    color: #d3394c;
+}
+
+.inputfile-4:focus + label,
+.inputfile-4.has-focus + label,
+.inputfile-4 + label:hover {
+    color: #722040;
+}
+
+.inputfile-4 + label figure {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #d3394c;
+	display: block;
+	padding: 20px;
+	margin: 0 auto 10px;
+}
+
+.inputfile-4:focus + label figure,
+.inputfile-4.has-focus + label figure,
+.inputfile-4 + label:hover figure {
+    background-color: #722040;
+}
+
+.inputfile-4 + label svg {
+    width: 100%;
+    height: 100%;
+    fill: #f1e5e6;
+}
+#file-5 {
+	display: none;
+}
+form .pic-video label {
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+}
+.pic-video label figure {
+	background: -moz-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#14330A), color-stop(26%,#6DAA5C), color-stop(72%,#348214), color-stop(100%,#146882)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%);
+	opacity: 0.96;
+}
+.pic-video label span {
+	color: #FFFFFF;
+	text-shadow: 0px 3px 0px #098A00;
+	white-space: pre-wrap;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-style: normal;
+	font-size: small;
+	text-align: center;
+	font-weight: bold;
+}
+label figure svg {
+
+}
+.meal_info {
+	background: -moz-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#14330A), color-stop(26%,#6DAA5C), color-stop(72%,#348214), color-stop(100%,#146882)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg, #14330A 0%,#21991D 26%,#6DAA5C 72%,#348214 100%); /* IE10+ */
+	opacity: 0.86;
+	}
+	
+.inputfile + label figure {
+    width: 50px;
+    height: 50px;
+}
+.header-1   {
+	text-align: center;
+	margin-top: -18px;
+	color: #FFFFFF;
+	font-family: Suburbana;
+	font-weight: 400;
+	font-style: normal;
+	text-shadow: 3px -1px 0px #000000;
+	font-size: medium;
+}
+		}
+		
+.meal-image.hide{
+	dispaly: none;
+	display: none;
+	}
+.meal-video.hide{
+	display:none;
+	}
+.meal_name {
+	width: 60%;
+}
+.measurements {
+    display: inline;
+    width: 100px;
+    color: #000;
+    border: 1px solid #ccc;
+    padding: 13px;
+    margin: 5px 0 15px 0;
+    font-size: 16px;
+    max-height: 45px;
+    height: 50px;
+}
+.Description {
+    display: inline;
+    width: 184px;
+    color: #000;
+    border: 1px solid #ccc;
+    padding: 13px;
+    margin: 5px 0 15px 0;
+    font-size: 16px;
+    max-height: 45px;
+    height: 50px;
+}
+.file-input {
+	transition: opacity 250ms;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 1;
+  filter: alpha(opacity=0); 
+  }
+ .fa.fa-close {
+	color: #FF0004;
+	cursor: pointer;
+	font-size: 49px;
+	display: inline;
+}
+		
+.addingrbtn {
+	cursor: pointer;
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 300;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	color: #efefef;
+	background-color: #f43d6d;
+	border: thick solid #DCDCDC;
+	/* [disabled]padding: .35em 2.35em .35em 2.35em; */
+	border-radius: 20px;
+	opacity: 1;
+	transition: opacity 250ms;
+}
+.methodbtn {
+	cursor: pointer;
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 300;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	color: #efefef;
+	background-color: #f43d6d;
+	border: thick solid #DCDCDC;
+	/* [disabled]padding: .35em 2.35em .35em 2.35em; */
+	border-radius: 20px;
+	opacity: 1;
+	transition: opacity 250ms;
+}
+
+.ingredient-header {
+	color: #FFFCFC;
+	font-family: 'Dancing Script', cursive;
+	font-size: 40px;
+	font-weight: 500;
+	padding: 0;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	text-shadow: 0px 0px 14px #000000;
+}
+.method-header {
+	color: #FFFFFF;
+	font-family: 'Dancing Script', cursive;
+	font-size: 40px;
+	font-weight: 500;
+	padding: 0;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	text-shadow: 0px 0px 14px #000000;
+}
+input[type="number"]  {
+	display: inline;
+	width: 60px;
+	color: #000;
+	border: 1px solid #ccc;
+	padding-top: 12px;
+	padding-right: 8px;
+	padding-left: 8px;
+	padding-bottom: 8px;
+	margin-top: 5px;
+	margin-right: 0;
+	margin-left: 0;
+	margin-bottom: 15px;
+	font-size: 16px;
+	max-height: 45px;
+	height: 22px;
+}
+.fa.fa-close  {
+	color: #FF0004;
+	cursor: pointer;
+	font-size: 54px;
+}
+
+.fa.fa-remove{
+	color: #FF0004;
+	cursor: pointer;
+	font-size: 54px;
+	}
+.inputdata {
+	border: thin solid #f43d6d;
+	border-radius: 16px;
+	text-align: left;
+	width: 70%;
+	height: 68px;
+	font-size: large;
+	font-family: cooper-black-std;
+	font-style: normal;
+	font-weight: 400;
+}
+.sendButton {
+	cursor: pointer;
+	background-color: #7B4A1F;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 25px;
+	;
+	width: 44%;
+	color: #ffffff;
+	font-size: 98%;
+}
+.sendButton:hover {opacity: 0.8;}
+.meal-time   {
+	color: #FFFFFF;
+	text-align: center;
+	text-shadow: 0px 0px 7px #000000;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: bolder;
+	font-size: large;
+}
+.meal-servings{
+	color: #FFFFFF;
+	text-align: center;
+	text-shadow: 0px 0px 7px #000000;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: bolder;
+	font-size: large;
+}
+.fa-clock-o {
+	margin-bottom: -8px;
+}
+
+.amount   {
+	width: 43px;
+}
+.note {
+	color: #FFFFFF;
+	text-shadow: 0px 0px #FFE9AA;
+}
+.select-category {
+	text-align: center;
+}

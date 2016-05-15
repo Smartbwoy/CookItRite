@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta charset="utf-8">
+<title>CookitRite</title>
+<link rel="stylesheet" href="Bootstrap/bootstrap.min.css" type="text/css">
+<link href="css/addrecipe.css" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+<link rel="stylesheet prefetch" href="css/font-awesome.min.css" />
+<link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css">
+<link href="Bootstrap/bootstrap-tagsinput.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script src="Bootstrap/jquery.min.js"></script>
+<script src="http://use.edgefonts.net/cooper-black-std:n4,i4:default;allan:n7:default;happy-monkey:n4:default;aclonica:n4:default;aguafina-script:n4:default;sonsie-one:n4:default.js" type="text/javascript"></script>
+<script src="js/load-image.all.min.js"></script>
+<script src="Bootstrap/bootstrap.min.js"></script>
+<script src="Bootstrap/bootstrap-tagsinput.js"></script>
+<script src="Bootstrap/bootstrap-tagsinput-angular.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body onLoad="passMealname();">
+<div class="main container">
+<form >
+<br>
+<div id="meal-name form-horizantal">
+ <input type="text" class="meal_name form-control" id="meal_name" spellcheck="true" Placeholder="Enter Meal Name" required/><br/>
+ </div>
+<center>
+<span class="meal-time"><i class="fa fa-clock-o"></i><br/><label for="amount"> Meal Preparaion Time</label>
+<br/>
+<input type="number" class="form-control amount" required/><span>&nbsp;mintues</span></span>
+<br/>
+</center>
+<center>
+<span class="meal-servings"><i class=" glyphicon glyphicon-apple"></i><br/><label for="amount"> Number of Servings</label>
+<br/>
+<input type="number" class="form-control amount-servings" required/><span>&nbsp;amount</span></span>
+<br/>
+</center>
+ <div class="row">
+     <div class="col-sm-6">
+     <span class="note"><!--<i class="fa fa-exclamation-circle"></i> Enter the Cateogries that meal falls in--></span><br>
+     <input type="text" class="Meal_Categories" data-role="tagsinput" spellcheck="true"/>
+     </div>&nbsp;
+     <div class="col-sm-6 select-category">
+     <select class="form-control Cateogory-type">
+     <option value="0">Select Prefered Category</option>
+     <option value="Breakfast">Breakfast</option>
+     <option value="Lunch">Lunch</option>
+     <option value="Dinner">Dinner</option>
+     <option value="Beverages">Beverages</option>
+     <option value="Appetizers">Appetizers</option>
+     <option value="Soups">Soups</option>
+     <option value="Salad">Salad</option>
+     <option value="Desserts">Desserts</option>
+     <option value="Canning/Freezing">Canning/Freezing</option>
+     <option value="Breads">Breads</option>
+     <option value="Vegetarian">Vegetarian</option>
+     <option value="Poultry">Poultry</option>
+     <option value="Beef">Beef</option>
+     <option value="Seafood">Seafood</option>
+     <option value="Pork">Pork</option>
+     </select>
+    <span role="button" onClick="addcateogry();"><i class="fa fa-plus"></i> Add Category</span>
+     </div>
+     </div>
+
+ 
+<div class="row">
+<div class="col-sm-6">
+ <div class="pic-video">
+ <div id="htmlID"></div>
+  <!--data-url="server/php/"--> 
+ <input type="file" name="image-video" id="file-5" class="inputfile inputfile-4" multiple/>
+					<label for="file-5"><figure><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg></figure>
+                    <span>Click to Upload Video or Picture</span></label>
+
+ </div>
+ 
+ <center>
+	<img class="meal-image hide" src="#" alt="Meal Picture" height="180px" width="30%" />
+ <video class="meal-video hide"  src="#"  height="180px" width="30%" autoplay ></video>
+ </center></div>
+ 
+ <div class="meal_info col-sm-6">
+  <hr>
+  
+<center>
+<h2 class="ingredient-header">Ingredient</h2>
+  <button class="addingrbtn"><i class=" fa fa-plus" ></i> Add Ingredient</button>
+ <div class="ingredents">
+
+ </div>
+ </center>
+ <hr>
+ <center>
+<h2 class="method-header">Method</h2>
+<button type="button" class="methodbtn">Click to add a instruction</button>
+ <br><br/>
+<div class="Methods">
+  </div>
+  </center>
+  <br/>
+<center><button class="sendButton" type="button" name="Submit" onClick="add_recipe();">Submit Recipe</button></center>
+</div>
+</div>
+ </form>
+</div>
+<script type="text/javascript">
+            app.initialize();
+        </script>
+<script type="text/javascript" src="cordova.js"></script>
+        <script>
+        	document.getElementById('file-5').onchange=function(e){
+	var image=e.target.files[0];
+	loadImage(image, function(img){
+			assignimg(img.src);
+			console.log(img);
+			},{maxWidth:100});
+};
+        </script>
+</body>
+</html>

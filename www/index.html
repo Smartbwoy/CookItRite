@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+	<script>
+    if(window.localStorage.getItem("loggedIn") == 1) {
+// Logged In
+// Redirect to first page after logged in.
+window.location.href="single.html";
+}
+</script>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet prefetch" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link href="css/webstyle.css" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+        <title>CookItRite</title>
+    </head>
+    <body>
+               <div class="auth opa login-page">
+			<div class="login-title">
+				<h3>CookItRite</h3>
+			</div>
+			<div class="inputWrapper">
+				<div class="user-icon">
+					<i class="fa fa-user fa-fw"></i>
+				</div>
+                
+				<form >
+					<input id="nameexist" type="text" class="username" id="username" name="username" placeholder="Enter your username or email" onload="userexist()" />
+					<div class="user-icon">
+					<i class="fa fa-key fa-fw"></i>
+					</div>
+					<input type="password" class="password" name="password" placeholder="Enter your password"/>
+					<div id="login_status"></div>
+					<div class="Log"><button type="button" class="btn btn-login">Login</button></div>
+				</form>
+				<div class="forget">
+					  <a style="cursor:pointer" role="button" onClick="$('.login-page').hide(1000);$('.forgot-pass').show(1000);"><i class="fa fa-lock"> Forgot password?</i></a>
+				</div>
+                <button type="submit" class="signup" id="signup">sign up</button>
+            
+			</div>
+		</div>
+        
+    <div class="auth forgot-pass"  style="display:none">
+       
+			<div class="login-title">
+         <h3>Password Reset</h3>
+             <i style="cursor:pointer; color:white" class="fa fa-arrow-left" role="button" onClick="$('.login-page').show(1000);$('.forgot-pass').hide(1000);">
+         Back to Login Page</i>
+			</div>
+			<div class="inputWrapper">
+			  <div class="user-icon">
+					<i class="fa fa-user fa-fw"></i>
+			  </div>
+			  <form >
+					<input type="text" class="forgot" placeholder="Enter your username or email"/>
+                    <span class="error_alert"><i class="fa fa-exclamation-triangle empty_name" style="display:none"> Enter username or email to rest password</i>
+                    <i class="fa fa-exclamation-triangle exist_name" style="display:none"> User does not exist </i></span></br/>
+					
+				<button type="button" class="btn btn-send" onClick="name_exist();">Send</button>
+				</form>
+                <i class="fa fa-exclamation-circle"> If you Don't have an account click the signup button to create profile</i>
+                <button type="submit" class="signup" id="signup">sign up</button>
+		  </div>
+		</div>
+        
+		<script src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>
